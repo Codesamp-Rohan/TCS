@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/dark-theme (1).svg">
+    <title>Tata Consultancy Service</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="navbar">
+                <img src="images/dark-theme.svg">
+                <div class="leftNavbar">
+                    <a href="#">What we do</a>
+                    <a href="#">Who we are</a>
+                    <a href="#">Insight</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Investors</a>
+                </div>
+            </div>
+            <div class="rightNavbar">
+                <a href="#">CONTACT US</a>
+                <a href="#">TCS WORLDWIDE</a>
+                <img src="images/search.png">
+                <img src="images/logo-tata.svg">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contentScroll" id="contentScroll">
+            <div class="image" id="image1">
+                </h1>
+                <img class="contentScrollImage" src="images/img1.jpg">
+            </div>
+            <div class="image" id="image2">
+                <img class="contentScrollImage" src="images/img2.jpg" alt="">
+            </div>
+            <div class="image" id="image3">
+                <img class="contentScrollImage" src="images/img3.jpg" alt="">
+            </div>
+            <div class="image" id="image4">
+                <img class="contentScrollImage" src="images/img4.jpg" alt="">
+            </div>
+            <div class="image" id="image5">
+                <img class="contentScrollImage" src="images/img5.jpg" alt="">
+            </div>
+            <div class="image" id="image6">
+                <img class="contentScrollImage" src="images/img6.jpg" alt="">
+            </div>
+        </div>
+        <div class="scrollButtons">
+            <button onclick="buttonclick()"><img id="scrollButtonLeft" src="images/left-arrow.png" alt=""></button>
+            <button><img id="scrollButtonRight" src="images/right-arrow.png" alt=""></button>
+        </div>
+        <div class="knowledge">
+            <div class="knowledgeKey">
+                <p class="para" id="para">1</p>
+                <p class="para">2</p>
+                <p class="para">3</p>
+            </div>
+            <div class="knowledgeContent">
+                <div class="knowledgeContentLeft">
+                    <p>BUILDING COLLECTIVE KNOWLEDGE</p>
+                    <h2>Answer a few questions to discover a trove of insights customized for you.</h2>
+                </div>
+                <div class="knowledgeContentRight">
+                    <div class="quizBox">
+                        <div class="quizQuestion">Are you committed to transitioning your business to hybrid work?</div>
+                        <div class="quizOption">
+                            <button>
+                                <h3>YES</h3>
+                            </button>
+                            <button>
+                                <h3>NO</h3>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="insight">
+            <div class="insightHead">
+                <h2>Insights by Interest</h2>
+                <a href="#">View All</a>
+            </div>
+            <div class="insightContent">
+                <div onmouseenter="linkHover1()" class="insightImg">
+                    <button>Data & Analytics</button>
+                    <img src="images/insight-img1.jpg">
+                    <h2>The battle of Big vs Small Data</h2>
+                    <a href="#" id="insightImga1">R E A D M O R E</a>
+                </div>
+                <div onmouseenter="linkHover2()" class="insightImg">
+                    <button>Data & Analytics</button>
+                    <img src="images/insight-img2.jpg">
+                    <h2>AI joins hand with health</h2>
+                    <a href="#" id="insightImga2">R E A D M O R E</a>
+                </div>
+                <div onmouseenter="linkHover3()" class="insightImg">
+                    <button>Internet of Things</button>
+                    <img src="images/insight-img3.jpg">
+                    <h2>Linking all the moving parts</h2>
+                    <a href="#" id="insightImga3">R E A D M O R E</a>
+                </div>
+            </div>
+        </div>
+        <div class="parallaxImage">
+            <h2>TATA<br>Consultancy<br>Service</h2>
+            <img src="images/dark-theme (1).svg">
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

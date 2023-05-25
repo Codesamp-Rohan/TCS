@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: #202020;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.leftNavbar>a {
+    text-decoration: none;
+    color: white;
+}
+
+.rightNavbar>a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #707070;
+}
+
+.navbar {
+    width: 70%;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.leftNavbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.rightNavbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contentScroll {
+    display: flex;
+    overflow-y: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+/*Important dattebayo*/
+.contentScroll::-webkit-scrollbar {
+    display: none;
+}
+
+.image {
+    width: 100%;
+}
+
+.contentScrollImage {
+    padding-inline: 2vw;
+    width: auto;
+    height: 70vh;
+    z-index: -1;
+    transition: 2s;
+    overflow-y: none;
+}
+
+.scrollButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    gap: 100px;
+}
+
+.scrollButtons button {
+    background-color: #202020;
+    border: 0px;
+}
+
+.scrollButtons img {
+    cursor: pointer;
+}
+
+.knowledge {
+    display: flex;
+    flex-direction: column;
+}
+
+.knowledgeKey {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-left: 70vw;
+    gap: 50px;
+}
+
+#para {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.knowledgeContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.knowledgeContentLeft {
+    padding: 10px;
+    min-height: 32.23rem;
+    max-width: 46.23rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    color: white;
+}
+
+.knowledgeContentLeft p {
+    color: #424242;
+}
+
+.knowledgeContentLeft h2 {
+    font-size: 3rem;
+}
+
+.knowledgeContentRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 32.23rem;
+    max-width: 46.23rem;
+}
+
+.quizBox {
+    box-shadow: 6px 6px 0px #202020;
+    border-radius: 20px;
+    height: 22rem;
+    margin-inline: 40px;
+    color: white;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid black;
+}
+
+.quizQuestion {
+    height: 10rem;
+    width: 80%;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    background-color: #202020;
+}
+
+.quizOption {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.quizOption button {
+    display: flex;
+    width: 80px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 0px;
+    background-image: linear-gradient(to right, #dc0916 30%, #f41fd6 100%);
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.quizOption button:hover {
+    background-image: linear-gradient(to right, #f41fd6 30%, #dc0916 100%);
+}
+
+.quizOption button:hover::after {
+    content: ">>";
+}
+
+.insight {
+    padding-inline: 40px;
+    margin-bottom: 100px;
+}
+
+.insight a {
+    text-decoration: underline;
+    color: #a5a5a5;
+}
+
+.insight h2 {
+    color: white;
+    font-weight: 100;
+    font-size: 34px;
+}
+
+.insightHead {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 63px;
+    border-bottom: 1px solid gray;
+}
+
+.insightContent {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.insightContent img {
+    box-shadow: 2px 4px 8px black inset;
+    width: 30vw;
+    height: auto;
+    border-bottom: transparent;
+    position: relative;
+}
+
+.insightImg button {
+    position: absolute;
+    z-index: 1;
+    width: 14vw;
+    height: 40px;
+    border-radius: 30px;
+    background: transparent;
+    margin: 20px;
+    border: 0.9px solid white;
+}
+
+.insightImg h2 {
+    position: absolute;
+    margin-top: -40px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.insightContent button:hover {
+    background-image: linear-gradient(to right, #f41fd6 30%, #dc0916 100%);
+    color: white;
+}
+
+.insightImg a {
+    display: none;
+    z-index: 2;
+    background: linear-gradient(to right, #f41fd6 10%, #dc0916 14%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.parallaxImage {
+    background-image: url("https://s7ap1.scene7.com/is/image/TCSCOMprod/cloud-journey-new:Large?wid=1260&hei=768&dpr=off");
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1000px;
+}
+
+.parallaxImage h2 {
+    font-size: 8rem;
+    background: linear-gradient(to right, #ffc708 4%, #faa613 8%, #f50e20 20%, #ee3376 40%, #ba20a9 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.parallaxImage img {
+    width: 40vw;
+}
