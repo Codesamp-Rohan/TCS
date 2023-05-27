@@ -5,7 +5,14 @@
 
 body {
     background-color: #000000;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
 }
 
 .header {
@@ -15,6 +22,14 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+}
+
+.headerMobile {
+    display: none;
+}
+
+#header {
+    overflow: hidden;
 }
 
 .leftNavbar>a {
@@ -29,7 +44,7 @@ body {
 }
 
 .navbar {
-    width: 70%;
+    width: 100%;
     gap: 20px;
     display: flex;
     flex-direction: row;
@@ -65,6 +80,7 @@ body {
 }
 
 .contentScrollImage {
+    padding: 100px;
     padding-inline: 2vw;
     width: auto;
     height: 70vh;
@@ -227,14 +243,18 @@ body {
     flex-direction: row;
     padding: 10px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .insightContent img {
     box-shadow: 2px 4px 8px black inset;
-    width: 30vw;
-    height: auto;
+    width: auto;
+    height: 50vh;
     border-bottom: transparent;
     position: relative;
+    overflow-y: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
 }
 
 .insightImg button {
@@ -275,7 +295,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 1000px;
+    margin-bottom: 200px;
 }
 
 .parallaxImage h2 {
@@ -288,3 +308,220 @@ body {
 .parallaxImage img {
     width: 40vw;
 }
+
+.tcsDifference {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+    font-size: 20px;
+}
+
+.differenceImage {
+    background-image: url("https://s7ap1.scene7.com/is/image/TCSCOMprod/freelancer-is-sitting-in-a-coffee-shop-and-having-conference-call-with-client:Large?wid=1116&hei=680&dpr=off");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.differenceImage button {
+    position: absolute;
+    z-index: 1;
+    width: 14vw;
+    height: 40px;
+    border-radius: 30px;
+    background: transparent;
+    margin-top: 20px;
+    border: 0.9px solid white;
+}
+
+.differenceImage button:hover {
+    background-image: linear-gradient(to right, #f41fd6 30%, #dc0916 100%);
+    color: white;
+}
+
+.differenceImage a {
+    text-decoration: none;
+    color: white;
+}
+
+.differenceContent {
+    margin: 30px;
+}
+
+.whoWeAre {
+    background-color: white;
+}
+
+.wwaContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 76px;
+}
+
+.wwaContainer img {
+    width: 74vw;
+    height: auto;
+}
+
+.wwaCard {
+    background-color: white;
+    width: 60vw;
+    margin-left: -15vw;
+    z-index: 2;
+    padding: 70px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wwaCard p {
+    color: #424242;
+}
+
+.wwaCard a {
+    text-decoration: none;
+    background: linear-gradient(to right, #f41fd6 10%, #dc0916 14%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wwaGetToKnow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.beliefInAction {
+    padding: 30px;
+    overflow-y: auto;
+    background-color: white;
+    display: flex;
+    gap: 20px;
+}
+
+.beliefInActionHeader {
+    background-color: white;
+    font-size: 2.0rem;
+    font-weight: 100;
+    padding-top: 100px;
+    padding-left: 30px;
+}
+
+.beliefInAction::-webkit-scrollbar {
+    display: none;
+}
+
+.beliefInActionCard {}
+
+.beliefInActionCard img {
+    height: 60vh;
+    filter: brightness(0.6);
+}
+
+.beliefInActionCardContent {
+    padding: 10px;
+    top: -30%;
+    position: relative;
+    color: white;
+}
+
+.beliefInActionCardContent a {
+    text-decoration: none;
+    background: linear-gradient(to right, #f41fd6 10%, #dc0916 14%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tcsBusiness {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tcsBusinessImage img {
+    width: 74vw;
+    height: auto;
+}
+
+.tcsBusinessContent {
+    background-color: white;
+    width: 60vw;
+    z-index: 2;
+    padding: 70px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tcsBusinessContent p {
+    color: #424242;
+}
+
+.tcsBusinessContent a {
+    text-decoration: none;
+    background: linear-gradient(to right, #f41fd6 10%, #dc0916 14%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1200px) {
+    .quizBox {
+        margin-inline: 5px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .knowledgeContentLeft {
+        max-width: 37.23rem;
+    }
+
+    .differenceImage {
+        height: 70vh;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .headerMobile {
+        display: block;
+        background-color: #202020;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .headerMobileRight {
+        gap: 20px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .knowledgeContentLeft {
+        max-width: 32.23rem;
+    }
+
+    .knowledgeContentLeft h2 {
+        font-size: 2.6rem;
+    }
+}
+
+@media screen and (max-width: 850px) {}
